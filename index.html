@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rock,paper,scissors</title>
+		<style>
+			body{
+				background-color:purple;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				height:95vh;
+			}
+			.game{
+				width:600px;
+				background-color:white;
+				padding:15px;
+				border-radius:8px;
+			}
+			.game img{
+				width:31%;
+				cursor:pointer;
+			}
+			.restart{
+				border:2px solid red;
+				border-radius:4px;
+				margin-left:250px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="game">
+			<p class="cPoint">Computer:0</p>
+			<p class="pPoint">Player:0</p>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwPdv0_I1plpAlXHZxTGoJp02s9I8h1N-2VXSSr5A5DOGZpaDLEfI-1BL4mfce7Yp9z4&usqp=CAU" onclick="play('rock')">
+			<img src="https://nehalhazem.github.io/rockPaperScissors.io/img/paper.png" onclick="play('paper')">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemzMtxIgZVo_Nviqtk_7iNA31fKis7gr6gyZboIN-K3iZL-wdn9omAMgXD-D39uvv67E&usqp=CAU" onclick="play('scissors')">
+			<p class="player">Player choice:</p>
+			<p class="computer">Computer choice:</p>
+			<p class="winner">Winner:</p>
+			<button class="restart" onclick="restart()">restart</button>
+		</div>	
+		<script src="app.js"></script>
+	</body>
+</html>
